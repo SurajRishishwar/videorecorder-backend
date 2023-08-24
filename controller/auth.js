@@ -26,6 +26,7 @@ module.exports.signin = async (req, res) => {
   
         res.status(200).send({
           id: si._id,
+          token:token,
           username: si.username,
           email: si.email,
         });
